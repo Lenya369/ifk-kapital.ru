@@ -191,8 +191,7 @@
 							<option value="Выкуп автомобиля">Выкуп автомобиля</option>
 							<option value="Лизинг">Лизинг</option>
 						</select>
-						<!-- <button>Оставить заявку</button> -->
-						<input type="submit" value="Оставить заявку">
+						<input id="button" type="submit" value="Оставить заявку">
 					</form>		
 				</div>
 			</div>
@@ -205,13 +204,15 @@
 		<div class="container">
 			<div class="row">
 				<h3>Приемущества компании "ИФК Капитал"</h3>
-				<p>Наша компания готова вам предложить целый ряд финансовых продуктов (деньги под ПТС, деньги под недвижимость, лизинг, срочный выкуп авто) каждый сможет найти для себя подходящий вариант для осуществления своих целей, задач.</p>
+				<p id="features_descr">Наша компания готова вам предложить целый ряд финансовых продуктов (деньги под ПТС, деньги под недвижимость, лизинг, срочный выкуп авто) каждый сможет найти для себя подходящий вариант для осуществления своих целей, задач.</p>
+			</div>
+			<div class="row">
 				<div class="advantageLine">
 					<div class="col-md-4">
 						<div class="advantage advant_1">
 							<p>Быстрое оформление</p>
 						</div>
-					</div>
+						</div>
 					<div class="col-md-4">
 						<div class="advantage advant_2">
 							<p>Низкие процентные ставки</p>
@@ -252,40 +253,29 @@
 		<div class="container">
 			<div class="row">
 				<h3>3 простых шага для получения займа</h3>
-				<section class="steps">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="row">
-									<div class="steps-v2-block">
-										<span class="steps-v2-block__number">1</span>
-										<img src="images/b03_icon1.svg" alt="" class="steps-v2-block__img">
-										<a href="#order" class="steps-v2-block__link btn-modal" data-metrika="step-take">Оставьте заявку</a>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-md-4">
-								<div class="row">
-									<div class="steps-v2-block steps-v2-block_arrow-left steps-v2-block_arrow-right">
-										<span class="steps-v2-block__number ">2</span>
-										<img src="images/operator.svg" alt="" class="steps-v2-block__img">
-										<h4 class="steps-v2-block__header">Ваш персональный менеджер<br>свяжется с Вами</h4>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="row">
-									<div class="steps-v2-block">
-										<span class="steps-v2-block__number">3</span>
-										<img src="images/b03_icon3.svg" alt="" class="steps-v2-block__img">
-										<h4 class="steps-v2-block__header">Получите деньги<br>для ваших нужд</h4>
-									</div>
-								</div>	
-							</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="steps-v2-block">
+							<span class="steps-v2-block__number">1</span>
+							<img src="images/b03_icon1.svg" alt="" class="steps-v2-block__img">
+							<a href="#order" class="steps-v2-block__link btn-modal" data-metrika="step-take">Оставьте заявку</a>
 						</div>
 					</div>
-				</section>
+					<div class="col-md-4">
+						<div class="steps-v2-block steps-v2-block_arrow-left steps-v2-block_arrow-right">
+							<span class="steps-v2-block__number ">2</span>
+							<img src="images/operator.svg" alt="" class="steps-v2-block__img">
+							<h4 class="steps-v2-block__header">Ваш персональный менеджер<br>свяжется с Вами</h4>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="steps-v2-block">
+							<span class="steps-v2-block__number">3</span>
+							<img src="images/b03_icon3.svg" alt="" class="steps-v2-block__img">
+							<h4 class="steps-v2-block__header">Получите деньги<br>для ваших нужд</h4>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -474,5 +464,6 @@ $(document).ready(function(){
 <script src="js/mip.js"></script>
 <script src="js/main.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
