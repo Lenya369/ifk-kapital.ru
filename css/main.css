@@ -34,19 +34,19 @@ p{
 }
 
 
-::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
 	color:#fff;
 	font-family: "RobotoLight";
 }
-::-moz-placeholder          {
+input::-moz-placeholder          {
 	color:#fff;
 	font-family: "RobotoLight";
 	}/* Firefox 19+ */
-:-moz-placeholder           {
-	color:#fff;
+input::-moz-placeholder           {
+	/*color:#fff;*/
 	font-family: "RobotoLight";
 	}/* Firefox 18- */
-:-ms-input-placeholder      {
+input::-ms-input-placeholder      {
 	color:#fff;
 	font-family: "RobotoLight";
 }
@@ -70,6 +70,11 @@ header::before{
 
 }
 
+.col-xs-6{
+	margin: 0;
+	padding: 0;
+}
+
 .modal{
 	text-align: center;
 	color: #000;
@@ -89,8 +94,22 @@ header::before{
 	border-bottom: 2px solid #6693B2;
 }
 
-.modal input::-webkit-input-placeholder{
-	color: #000;
+
+.modal input::-webkit-input-placeholder {
+	color:#000;
+	font-family: "RobotoLight";
+}
+.modal input::-moz-placeholder          {
+	color:#000;
+	font-family: "RobotoLight";
+	}/* Firefox 19+ */
+.modal input::-moz-placeholder           {
+	color:#000;
+	font-family: "RobotoLight";
+	}/* Firefox 18- */
+.modal input::-ms-input-placeholder      {
+	color:#000;
+	font-family: "RobotoLight";
 }
 
 .logo{
@@ -123,6 +142,11 @@ header::before{
 .advantageLine > .col-md-4 {
 padding-right: 0;
 padding-left: 0;
+}
+
+.time-work {
+	margin-top: 10px;
+	line-height: 25px;
 }
 
 .time-work p{
@@ -166,12 +190,13 @@ padding-left: 0;
 	background-size: cover;
 	background-position: 0 -89px;
 	height: 100%;
+	padding-top: 80px;
 }
 
 .main-desc h1{
 	text-transform: uppercase;
 	font-size: 2.5em;
-	margin-top: 80px;
+	/*margin-top: 80px;*/
 }
 
 .main-desc p{
@@ -180,7 +205,7 @@ padding-left: 0;
 }
 
 #form{
-	margin-top: 50px;
+	/*margin-top: 50px;*/
 	padding: 20px 30px;
 	margin-bottom: 150px;
 	background-color: rgba( 50, 50 , 50, 0.5);	
@@ -207,6 +232,7 @@ padding-left: 0;
 	border: none;
 	outline: none;
 	cursor: pointer;
+	color: #000;
 }
 
 #form option:focus{
@@ -248,7 +274,7 @@ select::-ms-expand {
 
 #button{
 	color: #fff !important;
-	margin-top: 10px !important;
+	margin-top: 20px !important;
 	background-color: #175A8B !important;
 	border: none!important;
 	border-radius: 10px !important;
@@ -262,10 +288,8 @@ select::-ms-expand {
 	background-color: #2182C9 !important;
 }
 
-
-
 #features{
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 #features h3{
@@ -285,60 +309,68 @@ select::-ms-expand {
 }
 
 .advantage {
-    min-height: 120px;
+	padding-top: 20px;
+    height: 180px;
     text-align: center;
-    padding: 100px 40px 0px 40px;
     font-weight: bold;
     color: #25272a;
-    background-size: auto 10px;
 }
 
-.advantageLine p{
-	margin-top: 30px;
+.advantage img{
+	margin-bottom: 10px;
+	height: 90px;
+	width: 300;
 }
 
-.advantageLine:first-child{
-	height: 140px;
+.advantage p{
+	margin-top: 20px;
 }
 
 .advant_1{
 	border-right: 2px solid #6693B2;
     border-bottom: 2px solid #6693B2;
-    background: url(../images/faster.png) no-repeat 50% 15px;
+    /*background: url(../images/faster.png) no-repeat 50% 15px;*/
     background-size: auto 100px;
 }
 
 .advant_2{
 	border-right: 2px solid #6693B2;
     border-bottom: 2px solid #6693B2;
-    background: url(../images/percent.png) no-repeat 50% 15px;
+    /*background: url(../images/percent.png) no-repeat 50% 15px;*/
     background-size: auto 100px;
 }
 
 .advant_3{
     border-bottom: 2px solid #6693B2;
-    background: url(../images/documents.png) no-repeat 50% 15px;
+    /*background: url(../images/documents.png) no-repeat 50% 15px;*/
     background-size: auto 100px;
 }
 
 .advant_4{
 	border-right: 2px solid #6693B2;
-    background: url(../images/individual.png) no-repeat 50% 28px;
+    /*background: url(../images/individual.png) no-repeat 50% 28px;*/
     background-size: auto 100px;
 }
 
 .advant_5{
 	border-right: 2px solid #6693B2;
-    background: url(../images/departure.png) no-repeat 50% 5px;
+    /*background: url(../images/departure.png) no-repeat 50% 5px;*/
     background-size: auto 100px;
 }
 
 .advant_6{
-    background: url(../images/nedvij.png) no-repeat 50% 18px;
+    /*background: url(../images/nedvij.png) no-repeat 50% 18px;*/
     background-size: auto 100px;
+    position: relative;
 }
+
 #credits, #credits a{
 	color: #25272A;
+}
+
+#credits .col-md-4, #credits .col-xs-12{
+	padding-left: 0;
+	padding-right: 0;
 }
 
 #credits h3{
@@ -353,34 +385,33 @@ select::-ms-expand {
 	margin-top: 30px;
 }
 
-.steps span {
+.steps-v2-block__number{
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
-.steps-v2-block img {
-	display: block;
-	width: 100px;
+.steps_block img {
+	width: 120px;
 	height: 80px;
-	margin-left: 35%;
-	padding: 20px 0 0 0;
-	margin-bottom: 30px;
+	margin-top: 20px;
 }
-.steps-v2-block{
+.steps_block{
+	display: block;
 	text-align: center;
-	height: 250px;
+	height: 200px;
 	width: 100%;
 	transition: .5s;
 }
 
-.steps-v2-block:hover{
+.steps-v2-block__header{
+	padding-top: 20px;
+}
+
+.steps_block:hover{
 	transition: .5s;
 	background-color: #6693B2;
 }
 
-.steps-v2-block:hover > .steps-v2-block__link {
-	text-decoration: underline;
-}
 
 #select, #select a, #select a:hover {
 	color: #25272A;
@@ -401,6 +432,7 @@ select::-ms-expand {
 
 #select .block:hover > h4{
 	text-decoration: underline;
+
 }
 
 #select .block h4{
@@ -474,6 +506,49 @@ select::-ms-expand {
 }
 
 
+#select-mobile, #select-mobile a{
+	color: #000!important;
+	width: 100%;
+}
+
+#select-mobile .fa-hand-o-right{
+	margin-right: 5px;
+}
+
+#select-mobile li{
+	list-style: none;
+}
+
+#select-mobile h3{
+	text-align: center;
+}
+
+#select-mobile a{
+	text-align: center;
+}
+
+#select-mobile a:hover{
+	text-decoration: none;
+}
+
+#select-mobile img {
+	width: 150px;
+}
+
+#select-mobile button{
+	margin: 20px 0;
+	text-align: center;
+	width: 100%;
+}
+
+#select-mobile .spoiler_links{
+	margin-bottom: 20px;
+}
+
+#select-mobile .spoiler_body{
+
+}
+
 #question{
 	background-color: #6693B2;
 	text-align: center;
@@ -481,7 +556,7 @@ select::-ms-expand {
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
-	background-position: right;
+	background-position: top;
 
 }
 
@@ -623,7 +698,7 @@ and (max-device-width : 480px) {
 
 	}
 	#main{
-		padding: 20px;
+		padding: 20px 0px;
 		-ms-background-position-x: -560px;
 		background-position-x: -560px;
 		-ms-background-position-y: -50px;
@@ -641,20 +716,46 @@ and (max-device-width : 480px) {
 		font-size: 1.2em;
 	}
 
-	.advantageLine{
-		display: inline-block;
-	}
-
-	.advantageLine p{
-		margin-top: 20px;
-		margin-bottom: 0px;
-	}
-
 	.advantage{
-		-webkit-background-size: 50px;
-		background-size: 70px;
 		border: none;
 	}
+	#select{
+		display: none;
+	}
+
+
+	.steps_block_1:before{
+		content: "1";
+		float: left;
+		font-size: 6em;
+		position: absolute;
+		top: 30px;
+		left: 10px;
+	}
+
+	.steps_block_2:before{
+		content: "2";
+		float: left;
+		font-size: 6em;
+		position: absolute;
+		top: 30px;
+		left: 10px;
+	}
+
+	.steps_block_3:before{
+		content: "3";
+		float: left;
+		font-size: 6em;
+		position: absolute;
+		top: 30px;
+		left: 10px;
+	}
+
+	.steps_block{
+		text-align: center;
+		position: relative;
+	}
+
 	
 }
 
@@ -674,7 +775,13 @@ and (max-width : 320px) {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
+	#select{
+		display: block;
+	}
 
+	#select-mobile{
+		display: none;
+	}
 	
 }
 
@@ -683,7 +790,15 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-/* Styles */
+
+	#select{
+		display: block;
+	}
+
+	#select-mobile{
+		display: none;
+	}
+
 }
 
 /* iPads (portrait) ----------- */
@@ -691,19 +806,9 @@ and (orientation : landscape) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait) {
-	.advantageLine{
-		display: inline-block;
-	}
-
-	.advantageLine p{
-		margin-top: 0px;
-		margin-bottom: 0px;
-	}
-
-	.advantage{
-		-webkit-background-size: 50px;
-		background-size: 70px;
-		border: none;
+	#select img {
+		width: 120px!important;
+		height: 110px !important;
 	}
 }
 
@@ -715,6 +820,9 @@ and (min-width : 1224px) {
 		background-repeat: no-repeat;
 		-webkit-background-size: cover;
 		background-size: cover;
+	}
+	#select-mobile{
+		display: none;
 	}
 }
 

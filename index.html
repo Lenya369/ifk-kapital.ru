@@ -177,20 +177,20 @@
 					<p>Получите деньги быстро, без хлопот и непредвиденных обстоятельств. Вы можете получить займ под залог личного имущества на любые цели: будь то
 						капитальный ремонт текущего жилья или выплаты по новому автомобилю и Вы не должны отчитываться за то, куда расходуете Ваша средства. Для получения займа
 						нужно минимум документов и любой вид личного имущества.</p>
-					</div>
-					<div class="col-md-offset-1 col-md-4 ">
-						<form id="form" method="POST" action="send.php"> 
-							<h3>Онлайн заявка</h3>
-							<p>После отправки с Вами свяжется наш менеджер и ответит на все Ваши вопросы</p>
-							<input type="text" name="name" placeholder="Ваше имя" required /><br/>
-							<input type="text" id="phone" name="phone" placeholder="Ваш телефон" required /><br/>
-						<select name="select" id="list[]" required size="1">
-							<option selected value="s1">Выберите услугу <i class="fa fa-arrow-down" aria-hidden="true"></i></option>
-							<option value="Займ под залог недвижимости">Займ под залог недвижимости</option>
-							<option value="Займ под залог ПТС">Займ под залог ПТС</option>
-							<option value="Выкуп автомобиля">Выкуп автомобиля</option>
-							<option value="Лизинг">Лизинг</option>
-						</select>
+				</div>
+				<div class="col-md-offset-1 col-md-4 ">
+					<form id="form" method="POST" action="send.php"> 
+						<h3>Онлайн заявка</h3>
+						<p>После отправки с Вами свяжется наш менеджер и ответит на все Ваши вопросы</p>
+						<input type="text" name="name" placeholder="Ваше имя" required /><br/>
+						<input type="text" id="phone" name="phone" placeholder="Ваш телефон" required /><br/>
+					<select name="select" id="list[]" required size="1">
+						<option selected value="s1">Выберите услугу <i class="fa fa-arrow-down" aria-hidden="true"></i></option>
+						<option value="Займ под залог недвижимости">Займ под залог недвижимости</option>
+						<option value="Займ под залог ПТС">Займ под залог ПТС</option>
+						<option value="Выкуп автомобиля">Выкуп автомобиля</option>
+						<option value="Лизинг">Лизинг</option>
+					</select>
 						<input id="button" type="submit" value="Оставить заявку">
 					</form>		
 				</div>
@@ -207,42 +207,43 @@
 				<p id="features_descr">Наша компания готова вам предложить целый ряд финансовых продуктов (деньги под ПТС, деньги под недвижимость, лизинг, срочный выкуп авто) каждый сможет найти для себя подходящий вариант для осуществления своих целей, задач.</p>
 			</div>
 			<div class="row">
-				<div class="advantageLine">
-					<div class="col-md-4">
+				<div class="col-md-4 col-sm-4 col-xs-6">
 						<div class="advantage advant_1">
+							<img src="images/faster.png" no-repeat width="70px" alt="">
 							<p>Быстрое оформление</p>
 						</div>
-						</div>
-					<div class="col-md-4">
+				</div>
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<div class="advantage advant_2">
+							<img src="images/percent.png" no-repeat width="80px" alt="">
 							<p>Низкие процентные ставки</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<div class="advantage advant_3">
+							<img src="images/documents.png" no-repeat width="90px" alt="">
 							<p>Минимальный перечень документов</p>
 						</div>
 					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="advantageLine">
-					<div class="col-md-4">
+
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<div class="advantage advant_4">
+							<img src="images/individual.png" no-repeat width="80px" alt="">
 							<p>Индивидуальный подход для каждого клиента</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<div class="advantage advant_5">
+							<img src="images/departure.png" no-repeat width="100px" alt="">
 							<p>Бесплатный выезд специалиста для сбора документов, либо оценки имущества</p>
 						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-4 col-xs-6">
 						<div class="advantage advant_6">
+							<img src="images/nedvij.png" no-repeat width="80px" alt="">
 							<p>Использования имущества при займе под залог ПТС или недвижимости</p>
 						</div>
 					</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -253,26 +254,29 @@
 		<div class="container">
 			<div class="row">
 				<h3>3 простых шага для получения займа</h3>
+			</div>
 				<div class="row">
-					<div class="col-md-4">
-						<div class="steps-v2-block">
-							<span class="steps-v2-block__number">1</span>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="steps_block steps_block_1">
+							<p class="steps-v2-block__number hidden-xs">1</p>
 							<img src="images/b03_icon1.svg" alt="" class="steps-v2-block__img">
-							<a href="#order" class="steps-v2-block__link btn-modal" data-metrika="step-take">Оставьте заявку</a>
+							<a href="#order" class="btn-modal">
+								<p class="steps-v2-block__header">Оставьте заявку</p>
+							</a>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="steps-v2-block steps-v2-block_arrow-left steps-v2-block_arrow-right">
-							<span class="steps-v2-block__number ">2</span>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="steps_block steps_block_2">
+							<p class="steps-v2-block__number hidden-xs">2</p>
 							<img src="images/operator.svg" alt="" class="steps-v2-block__img">
-							<h4 class="steps-v2-block__header">Ваш персональный менеджер<br>свяжется с Вами</h4>
+							<p class="steps-v2-block__header">Ваш персональный менеджер<br>свяжется с Вами</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="steps-v2-block">
-							<span class="steps-v2-block__number">3</span>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="steps_block steps_block_3">
+							<p class="steps-v2-block__number hidden-xs">3</p>
 							<img src="images/b03_icon3.svg" alt="" class="steps-v2-block__img">
-							<h4 class="steps-v2-block__header">Получите деньги<br>для ваших нужд</h4>
+							<p class="steps-v2-block__header">Получите деньги<br>для ваших нужд</p>
 						</div>
 					</div>
 				</div>
@@ -281,26 +285,26 @@
 	</section>
 	<!-- секция инструкция конец -->
 
-	<!-- секция услуги -->
+	<!-- секция услуги  для браузеров-->
 	<section id="select">
 		<div class="container">
 			<div class="row">
 				<h3>Чтобы увидеть перечень необходимых документов, просто наведите мышкой на нужную услугу!</h3>
 			</div>
 			<div class="row">
-				<div class="col-md-3 block" id="home">
+				<div class="col-md-3 col-sm-3 block" id="home">
 					<h4>Залог под недвижимость</h4>
 					<img src="images/zalog-nedvij.png" alt="">
 				</div>
-				<div class="col-md-3 block" id="pts">
+				<div class="col-md-3 col-sm-3 block" id="pts">
 					<h4>Залог под ПТС</h4>
 					<img src="images/pts.png" alt="">
 				</div>
-				<div class="col-md-3 block" id="car">
+				<div class="col-md-3 col-sm-3 block" id="car">
 					<h4>Срочный выкуп авто</h4>
 					<img src="images/zalog-avto.png" alt="">
 				</div>
-				<div class="col-md-3 block" id="lizing">
+				<div class="col-md-3 col-sm-3 block" id="lizing">
 					<h4>Лизинг</h4>
 					<img src="images/lizing.png" alt="">
 				</div>
@@ -382,6 +386,116 @@
 						</div>
 						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLizing">Оставить заявку</button>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- секция услуги конец-->
+
+
+	<!-- секция услуги  для мобильных браузеров-->
+	<section id="select-mobile">
+		<div class="container ">
+			<div class="row">
+				<h3>Чтобы увидеть перечень необходимых документов, просто кликните на нужную услугу!</h3>
+			</div>
+			<div class="row">
+				<a class="spoiler_links col-xs-12">
+					<img src="images/zalog-nedvij.png" alt="">
+					<h4>Залог под недвижимость</h4>
+				</a>
+				<div class="spoiler_body">
+					<p>Данная услуга позволит вам получить нужную сумму под залог вашей недвижимости в кротчайшие сроки под не высокий процент.</p>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Обязательные документы:</li>
+						<ul>
+							<li>Свидетельство о регистрации права собственности</li>
+							<li>правоустанавливающие документы(указаны в свидетельстве) договор купли-продажи, договор приватизации, договор дарения и т.д</li>
+							<li>Выписка из ЕГРН выданная не более 10 дней к моменту подачи документов на рассмотрение</li>
+							<li>Технический паспорт</li>
+							<li>Кадастровый паспорт</li>
+							<li>Домовая книга или справка с паспортного стола о колличестве прописанных людей</li>
+						</ul>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Cумма и сроки займа не ограничены и зависят от стоимости залога</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Cрок рассмотрения заявки от 4 часов</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Процентная ставка от 2%</li>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalZalogNedvij">Оставить заявку</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<a class="spoiler_links col-xs-12">
+					<img src="images/pts.png" alt="">
+					<h4>Залог под ПТС</h4>					
+				</a>
+				<div class="spoiler_body">
+					<p>Деньги под залог ПТС – данная услуга позволит вам максимально быстро получить необходимую сумму для личных нужд, при минимальном пакете документов, минимальном сроке рассмотрения заявки и что самое главное – вы продолжаете пользоваться вашим автомобилем.</p>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Обязательные документы:</li>
+						<ul>
+							<li>Паспорт гражданина Российской Федерации</li>
+							<li>Водительское удостоверение</li>
+							<li>Паспорт транспортного средства</li>
+							<li>Свидетельство о регистрации транспортного средства</li>
+						</ul>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Сумма займа от 10 000</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Автомобиль любого года выпуска</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Срок займа от 1 месяца</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Процентная ставка от 3,5%</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Срок рассмотрения заявки 15 минут</li>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalZalogPts">Оставить заявку</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<a class="spoiler_links col-xs-12">
+					<img src="images/zalog-avto.png" alt="">	
+					<h4>Срочный выкуп авто</h4>				
+				</a>
+				<div class="spoiler_body">
+					<p>Срочный выкуп авто - данная услуга позволит вам быстро продать свой автомобиль, для того чтобы максимально быстро получить деньги на личные нужды, при минимальном пакете документов и в кратчайшие сроки. Оставьте заявку и наши специалисты подъедут к Вам для оценки Вашего автомобиля.</p>
+						<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Автомобиль от 1993 года выпуска</li>
+						<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Получение денег в течении 30 минут</li>
+						<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Стоимость автомобиля наши специалисты оценят после осмотра</li>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalZalogCar">Оставить заявку</button>
+				</div>
+			</div>
+
+			<div class="row">
+				<a class="spoiler_links col-xs-12">
+					<img src="images/lizing.png" alt="">
+					<h4>Лизинг</h4>							
+				</a>
+				<div class="spoiler_body">
+					<p>Лизинг — это инвестиционный инструмент, позволяющий Вам, не отвлекая единовременно большого объема собственных средств, провести модернизацию предприятия и обновление основных фондов, расширить производство, приобретая новое, современное, высокотехнологичное оборудование, автотранспорт и технику</p>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Первоначальный платеж от 10%</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Удорожание от 0%</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Срок погашения от 1 года до 5 лет</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Учет транспортного средства на балансе лизингодателя или лизингополучателя</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Возможность выбора графика платежей</li>
+					<li><i class="fa fa-hand-o-right" aria-hidden="true"></i>Обязательные документы:</li>
+					<a href=" " class="spoiler_links">Для индивидуальных предпринимателей<i class="fa fa-hand-o-down" aria-hidden="true"></i></a>
+					<div class="spoiler_body">	 	 
+						<li>Копия всех страниц паспорта индивидуального предпринимателя</li>
+						<li>Копия свидетельства о внесении записи в единый государственный реестр индивидуальных предпринимателей. (ЕГРИП)</li>
+						<li>Копия свидетельства о постановке на налоговый учет</li>
+						<li>Заявитель, работающий на ОСН должен предоставить копии деклараций по НДС за 4 (четыре) отчетных периода и 3-НДФЛ за последний отчетный период, с отметкой налогового органа, заверенные печатью и подписью заявителя. <br>Заявитель, работающий на УСН (в т.ч. ЕНВД), должен предоставить копию декларации по налогу за 2 (два) отчетных периода с отметкой налогового органа, заверенную печатью и подписью заявителя.</li>
+						<li>Оригинал справки из обслуживающего банка об оборотах по счету за последние 12 месяцев (помесячно)</li> 	 
+	 					</div>	 
+				
+					<div>
+						<a href=" " class="spoiler_links">Для юридических лиц<i class="fa fa-hand-o-down" aria-hidden="true"></i></a>
+						<div class="spoiler_body">	 	 
+							<li>Копия Устава компании-заявителя со всеми изменениями и дополнениями</li>
+							<li>Копия Свидетельства о постановке на налоговый учет компании-заявителя</li>
+							<li>Копия Свидетельства о регистрации компании-заявителя</li>
+							<li>Копия приказа (Протокола) о назначении руководителя компании-заявителя</li>
+							<li>Копия приказа о назначении главного бухгалтера компании-заявителя</li>
+							<li>Копия паспорта руководителя компании-заявителя (первая страница, а также страница с указанием регистрации)</li>
+							<li>Копия финансовой отчетности (форма №1 "Бухгалтерский баланс" на последний отчетный год, декларации по налогу на прибыль за 4 (четыре) последние отчетные даты) для юридических лиц на ОСН, для организаций на УСН- копию  екларации за 2 (два) последний отчетных периода, с отметкой налогового органа о принятии документов (копией протокола об электронной передаче отчетности), заверенную печатью и подписью заявителя.</li>
+							<li>Оригинал справки из обслуживающего банка об оборотах по счету за последние двенадцать месяцев (в помесячной разбивке).*<br>
+								*- не требуется для организации на ОСН, если предмет лизинга легковой автомобиль.</li> 
+	 					</div>	 
+					</div>
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLizing">Оставить заявку</button>
 				</div>
 			</div>
 		</div>
