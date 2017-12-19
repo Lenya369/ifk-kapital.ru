@@ -145,7 +145,6 @@ padding-left: 0;
 }
 
 .time-work {
-	margin-top: 10px;
 	line-height: 25px;
 }
 
@@ -571,60 +570,60 @@ select::-ms-expand {
 	font-size: 1.3em;
 }
 
-#form_footer p{
+.form_footer p{
 	margin-top: 0;
 }
 
-#form_footer{
+.form_footer{
 	padding: 20px 30px;
 	color: #fff;
 	background-color: rgba( 50, 50 , 50, 0.5);
 	margin-bottom: 30px;
 }
 
-#form_footer input, #form_footer select, #form_footer textarea{
+.form_footer input, #form_footer select, #form_footer textarea{
 	width: 100%;
 	border: none;
 	padding: 10px 0;
 	background-color: transparent;
 	border-bottom: 2px solid #6693B2;
 }
-#form_footer textarea{
+.form_footer textarea{
 	resize: none;
 }
 
-#form_footer input:focus{
+.form_footer input:focus{
 	outline-bottom: 2px solid #6693B2;
 }
 
-#form_footer option{
+.form_footer option{
 	background-color: #292B2A;
 	border: 0;
 	cursor: pointer;
 }
 
-#form_footer button{
+.form_footer button{
 	margin-top: 10px;
 	background-color: #175A8B;
 	border: none;
 	border-radius: 10px;
 	padding: 10px 20px;
 }
-#form_footer button:hover{
+.form_footer button:hover{
 	transition: .5s;
 	background-color: #2182C9;
 }
 
-#footer{
+.footer{
 	background-color:  #25272A;
 }
 
-#footer h4{
+.footer h4{
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
 
-#footer .menu{
+.footer .menu{
 	margin-top: 40px;
 	text-transform: uppercase;
 }

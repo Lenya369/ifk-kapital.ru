@@ -50,7 +50,7 @@ ymaps.ready(init);
 
     function init(){     
         myMap = new ymaps.Map("map", {
-            center: [52.249721, 104.358167], 
+            center: [52.251082, 104.352553], 
             zoom: 17,
             type: 'yandex#map',
             controls:['zoomControl'],
@@ -58,7 +58,7 @@ ymaps.ready(init);
         });
 
 
-    var placemark = new ymaps.Placemark([52.249721, 104.358167],{
+    var placemark = new ymaps.Placemark([52.251082, 104.352553],{
  		// iconContent:'<a class="map-point"></a>',
         balloonContent: ' \
            <div class="map-balloon"> \
@@ -66,11 +66,11 @@ ymaps.ready(init);
              <ul class="chars"> \
                <li> \
                  <b>Время работы:</b> \
-                 Пн-Вс с 8.00 до 20.00 \
+                 Пн-Пт с 8.00 до 19.00 \
                </li> \
                <li> \
                  <b>Сайт:</b> \
-                 <a class="href" href="#">www.ifk-kapital.ru</a> \
+                 <a class="href" href="www.ifk-kapital.ru">www.ifk-kapital.ru</a> \
              \
                </li> \
              </ul> \
@@ -92,5 +92,4 @@ ymaps.ready(init);
     myMap.geoObjects.add(placemark);
 
     placemark.balloon.open();
-    }
-
+  }

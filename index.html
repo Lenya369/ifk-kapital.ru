@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/themes/tab.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<!-- Yandex.Metrika counter -->
 	<script type="text/javascript" >
 	    (function (d, w, c) {
@@ -57,15 +58,14 @@
 	        <h4 class="modal-title" id="myModalLabel">Залог под недвижимость</h4>
 	      </div>
 	      <div class="modal-body">
-	       <form action="">
-	       		<input type="text" placeholder="Ф.И.О." name="fio"><script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	       <form id="" action="" name="form" action="" method="POST">
+	       	<input type="text" placeholder="Ф.И.О." name="fio">
 	       	<input type="tel" placeholder="Ваш телефон" name="phone">
 	       	<input type="text" placeholder="Опишите Вашу недвижимость" name="typeNedvij">
 	       	<input type="number" placeholder="Необходимая сумма" name="needMoney">
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-	        <button type="button" class="btn btn-primary">Отправить заявку</button>
+	        <button type="submit" class="btn btn-primary">Отправить заявку</button>
 	       </form>
 	      </div>
 	    </div>
@@ -81,13 +81,14 @@
 	        <h4 class="modal-title" id="myModalLabel">Залог под ПТС</h4>
 	      </div>
 	      <div class="modal-body">
-	        <input type="text" placeholder="Ф.И.О.">
-	        <input type="text" placeholder="Номер телефона">
-	        <input type="text" placeholder="Марка и модель автомобиля">
-	        <input type="text" placeholder="Необходимая сумма">
+	        <form name="form" action=" " method="POST">
+	        	<input type="text" placeholder="Ф.И.О.">
+	        	<input type="text" placeholder="Номер телефона">
+	        	<input type="text" placeholder="Марка и модель автомобиля">
+	        	<input type="text" placeholder="Необходимая сумма">
+	        </form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
 	        <button type="button" class="btn btn-primary">Отправить заявку</button>
 	      </div>
 	    </div>
@@ -103,14 +104,15 @@
 	        <h4 class="modal-title" id="myModalLabel">Срочный выкуп автомобиля</h4>
 	      </div>
 	      <div class="modal-body">
-	        <input type="text" placeholder="Ф.И.О.">
-	        <input type="text" placeholder="Номер телефона">
-	        <input type="text" placeholder="Марка и модель автомобиля">
-	        <input type="text" placeholder="Год выпуска">
-	        <input type="text" placeholder="Необходимая сумма">
+	        <form name="form" action="" method="POST">
+	        	<input type="text" placeholder="Ф.И.О.">
+	        	<input type="text" placeholder="Номер телефона">
+	        	<input type="text" placeholder="Марка и модель автомобиля">
+	        	<input type="text" placeholder="Год выпуска">
+	        	<input type="text" placeholder="Необходимая сумма">
+	        </form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
 	        <button type="button" class="btn btn-primary">Отправить заявку</button>
 	      </div>
 	    </div>
@@ -126,14 +128,15 @@
 	        <h4 class="modal-title" id="myModalLabel">Лизинг</h4>
 	      </div>
 	      <div class="modal-body">
-	        <input type="text" placeholder="Ф.И.О.">
-	        <input type="text" placeholder="Наименование компании">
-	        <input type="text" placeholder="Номер телефона">
-	        <input type="text" placeholder="Предмет лизинга">
-	        <input type="text" placeholder="Необходимая сумма">
+	        <form name="form" action="" method="POST">
+	        	<input type="text" placeholder="Ф.И.О.">
+	        	<input type="text" placeholder="Наименование компании">
+	        	<input type="text" placeholder="Номер телефона">
+	        	<input type="text" placeholder="Предмет лизинга">
+	        	<input type="text" placeholder="Необходимая сумма">
+	        </form>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
 	        <button type="button" class="btn btn-primary">Отправить заявку</button>
 	      </div>
 	    </div>
@@ -154,8 +157,8 @@
 					</div>
 				</div>
 				<div class="col-md-4 time-work">
-					<p>Будни: С 8:00 до 19:00</p>
-					<p><span></span></p>
+					<p>Пн-Пт: С 8:00 до 19:00</p>
+					<p>Сб-Вс: С 10:00 до 18:00</p>
 					<p><a href="https://yandex.ru/maps/-/CBaYbHb~gC" target="_blank">г. Иркутск, ул. Байкальская д.280/1</a></p>
 				</div>
 				<div class="col-md-2 phone">
@@ -179,11 +182,11 @@
 						нужно минимум документов и любой вид личного имущества.</p>
 				</div>
 				<div class="col-md-offset-1 col-md-4 ">
-					<form id="form" method="POST" action="send.php"> 
+					<form id="form" name="form"> 
 						<h3>Онлайн заявка</h3>
 						<p>После отправки с Вами свяжется наш менеджер и ответит на все Ваши вопросы</p>
-						<input type="text" name="name" placeholder="Ваше имя" required /><br/>
-						<input type="text" id="phone" name="phone" placeholder="Ваш телефон" required /><br/>
+						<input type="text" name="name" placeholder="Ваше имя" required />
+						<input type="phone" id="phone1" name="phone" required placeholder="8(___) ___-____ "/>
 					<select name="select" id="list[]" required size="1">
 						<option selected value="s1">Выберите услугу <i class="fa fa-arrow-down" aria-hidden="true"></i></option>
 						<option value="Займ под залог недвижимости">Займ под залог недвижимости</option>
@@ -513,13 +516,13 @@
 						<p>У финансовой услуги «кредит» вопреки ее репутации есть ряд очевидных плюсов. Они не только помогут вам пережить временную нехватку денег, но в некоторых случаях даже обогатят ваш бюджет. Если у Вас остались вопросы, то задайте свой вопрос нашим специалистам и они помогут Вам развеять все Ваши сомнения.</p>
 					</div>
 					<div class="col-md-offset-2 col-md-4">
-						<form id="form_footer">
+						<form id="form_footer" class="form_footer">
 							<p>Опишите свой вопрос и мы свяжемся с Вами в течении 15 минут.</p>
-							<input type="text" name="name" placeholder="Ваше имя" required /><br/>
-							<input type="text" name="phone" placeholder="Ваш телефон" required /><br/>
-							<textarea name="descr_form" id="descr_form" placeholder="Опишите Ваш вопрос" wrap="off"></textarea>
-							<button>Оставить заявку</button>
-					</form>		
+							<input type="text" name="name" placeholder="Ваше имя" required />
+							<input type="phone" id="phone2" name="phone" required placeholder="8(___) ___-____"/>
+							<textarea name="descr_form" id="descr_form" placeholder="Опишите Ваш вопрос" wrap="off" required></textarea>
+							<button id="button" type="submit">Оставить заявку</button> 
+						</form>		
 					</div>
 				</div>
 			</div>
@@ -558,26 +561,51 @@
 	<!-- секция шапка низ конец -->
 
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/jquery.scrollUp.js"></script>
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){
+	$(document).ready(function(){
     $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
             var form_data = $("#form").serialize(); //собераем все данные из формы
             $.ajax({
             type: "POST", //Метод отправки
             url: "send.php", //путь до php фаила отправителя
             data: form_data,
-            success: function() {
-                   //код в этом блоке выполняется при успешной отправке сообщения
-                   alert("Ваше сообщение отпрвлено!");
+            }).done(function() {
+              alert("Спасибо за заявку! Мы с вами свяжемся");
             });
+            return false;
     });
 });    
 </script>
-<script src="js/bootstrap.min.js"></script>	
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#form_footer").submit(function() { //устанавливаем событие отправки для формы с id=form
+            var form_data = $("#form_footer").serialize(); //собераем все данные из формы
+            $.ajax({
+            type: "POST", //Метод отправки
+            url: "send.php", //путь до php фаила отправителя
+            data: form_data,
+            }).done(function() {
+              alert("Спасибо за заявку! Мы с вами свяжемся");
+            });
+            return false;
+    });
+});    
+</script>
+<script type="text/javascript">
+	$(function() {
+ 		$("#phone1").mask("8(999) 999-9999");
+ 		$("#phone2").mask("8(999) 999-9999");
+ 		$("#phone3").mask("8(999) 999-9999");
+ 		$("#phone4").mask("8(999) 999-9999");
+ 		$("#phone5").mask("8(999) 999-9999");
+ 		$("#phone6").mask("8(999) 999-9999");
+});
+</script>
 <script src="js/mip.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
+<script src="//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
 <script src="js/main.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
